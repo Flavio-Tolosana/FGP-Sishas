@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/* agnadirProductoStyle.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Azul pastel de fondo */
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Estilo para los campos "Nombre," "Color," y "Marca" */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="number"],
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  /* Estilo para los campos "Unidades" y "Precio" */
+  .small-input {
+    width: 30%;
+  }
+  
+  #tipoPoducto {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .atributo_extra_Accesorio,
+  .atributo_extra_Mastil,
+  .atributo_extra_Cachimba-completa,
+  .atributo_extra_Cazoleta,
+  .atributo_extra_Mangueras,
+  .atributo_extra_Base {
+    display: none;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  .atributo_extra_Accesorio input[type="text"],
+  .atributo_extra_Mastil input[type="text"],
+  .atributo_extra_Cachimba-completa input[type="number"],
+  .atributo_extra_Cazoleta select,
+  .atributo_extra_Mangueras input[type="number"],
+  .atributo_extra_Base input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .container_informacion {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  .container_informacion input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .enviar_informacion {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .enviar_informacion input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .enviar_informacion input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+		
+		

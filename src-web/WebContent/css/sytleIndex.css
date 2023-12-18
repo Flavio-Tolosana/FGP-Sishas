@@ -1,0 +1,112 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  /*background-color: #f5f5f5;*/
+  background-color: #708090;
+  overflow: hidden;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #555;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+.intro {
+    width: 100%;
+    padding: 10px 0px;
+    margin: 5px 0px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+
+.inpIniciarSesion {
+	background-color: #007BFF;
+	color: #000;
+    padding: 10px 153px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.inpIniciarSesion:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+
+a {
+	text-decoration: none;
+}
+.registar {
+	background-color: #C5A6DE;
+	color: #000;
+    padding: 10px 157px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.registar:hover {
+    background-color: #8D4EBD;
+    color: #fff;
+}
+
+.volver {
+	background-color: #7CEDF5;
+	color: #000;
+    padding: 10px 115px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.volver:hover {
+    background-color: #13E4F3;
+    color:#fff;
+}
+
+.error {
+  border: 1px solid red;
+  background-color: pink;
+  color: black;
+  padding: 10px;
+}
