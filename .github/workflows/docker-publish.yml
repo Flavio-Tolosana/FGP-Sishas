@@ -18,12 +18,12 @@ jobs:
 
       - name: Build and push PostgreSQL image
         run: |
-          cd postgres
+          cd Docker/postgres
           docker build -t ${{ secrets.DOCKER_USERNAME }}/sisinf-postgresql:latest .
           docker push ${{ secrets.DOCKER_USERNAME }}/sisinf-postgresql:latest
 
       - name: Build and push Tomcat image
         run: |
-          cd tomcat
+          cd Docker/tomcat
           docker build -t ${{ secrets.DOCKER_USERNAME }}/sisinf-tomcat:latest .
           docker push ${{ secrets.DOCKER_USERNAME }}/sisinf-tomcat:latest
