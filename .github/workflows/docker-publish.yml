@@ -1,0 +1,29 @@
+name: Build and Push Docker Images
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Log in to Docker Hub
+        run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+      - name: Build and push PostgreSQL image
+        run: |
+          cd postgres
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/sisinf-postgresql:latest .
+          docker push ${{ secrets.DOCKER_USERNAME }}/sisinf-postgresql:latest
+
+      - name: Build and push Tomcat image
+        run: |
+          cd tomcat
+          docker build -t ${{ secrets.DOCKER_USERNAME }}/sisinf-tomcat:latest .
+          docker push ${{ secrets.DOCKER_USERNAME }}/sisinf-tomcat:latest
